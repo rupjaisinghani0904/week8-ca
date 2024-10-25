@@ -10,9 +10,8 @@ where
   // Identify test files
   test.getFile().getBaseName().matches("%test%") and
   // Look for calls to pressActionKey within the test
-  exists(CallExpr call, Function pressActionKey |
+  exists(CallExpr call |
     call.getContainer() = test and 
-    call.getCallee().getAFunctionValue() = pressActionKey and
-    pressActionKey.getName() = "pressActionKey"
+    call.getCalleeName() = "pressActionKey"
   )
 select test, "This test calls pressActionKey"
