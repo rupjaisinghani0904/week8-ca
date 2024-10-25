@@ -1,3 +1,9 @@
+/**
+ * @name Functions longer than 10 lines
+ * @kind problem
+ * @problem.severity recommendation
+ */
+
 import javascript
 
 from Function f
