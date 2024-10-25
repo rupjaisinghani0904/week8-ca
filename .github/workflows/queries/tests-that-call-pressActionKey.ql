@@ -1,6 +1,9 @@
 /**
  * @name Tests calling pressActionKey
  * @description Finds test functions that call pressActionKey
+ * @kind problem
+ * @problem.severity recommendation
+ * @id javascript/tests-calling-press-action-key
  */
 
 import javascript
